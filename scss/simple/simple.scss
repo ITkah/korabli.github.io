@@ -50,6 +50,9 @@
     @media (max-width: 990px) {
         font-size: 1.4rem;
     }
+    @media (max-width: 576px) {
+        font-size: 1.2rem;
+    }
     &::after {
         background: #cccccc none repeat scroll 0 0;
         border-radius: 50%;
@@ -88,5 +91,28 @@
             max-width: 80%;
             display: block;
         }
+    }
+}
+
+.btn_dark {
+    background: #282459;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 20px 0;
+    display: block;
+    width: 90px;
+    text-align: center;
+    transition: .3s;
+    font: 400 .95rem 'Montserrat', sans-serif;
+    box-shadow: 0px 0px 40px -12px rgba(0, 0, 0, .5);
+    @media (max-width: 576px) {
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+    }
+    &:hover {
+        box-shadow: none;
     }
 }
