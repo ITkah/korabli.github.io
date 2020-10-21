@@ -1,0 +1,110 @@
+footer {
+    background: #001224;
+    .container {
+        padding: 25px 0;
+    }
+}
+
+.footer_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    @media (max-width: 576px) {
+        grid-template-columns: 1fr;
+    }
+    .footer_title {
+        color: #fff;
+        margin-bottom: 15px;
+        font: 500 1rem 'Montserrat', sans-serif;
+    }
+    .contact_list {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        a {
+            color: rgba(255, 255, 255, .6);
+            font: 400 .95rem 'Montserrat', sans-serif;
+        }
+    }
+    .footer_form {
+        display: flex;
+        input {
+            padding: 10px;
+            background: hsl(210, 100%, 18%) none repeat scroll 0 0;
+            outline: none;
+            border: none;
+            border-radius: 0;
+            font: 400 .95rem 'Montserrat', sans-serif;
+            color: #fff;
+        }
+        button {
+            background: hsl(210, 100%, 18%) none repeat scroll 0 0;
+            height: 38px;
+            width: 40px;
+            outline: none;
+            border: none;
+            display: block;
+            border-left: 1px solid rgba(255, 255, 255, .6);
+            transition: .3s;
+            &:hover {
+                background: #3aa6f5;
+            }
+            img {
+                position: relative;
+                top: 1px;
+                height: 18px;
+            }
+        }
+    }
+    .footer_menu {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        li {
+            position: relative;
+            padding-left: 15px;
+            &::before {
+                content: '';
+                background: rgba(255, 255, 255, .6);
+                height: 5px;
+                width: 5px;
+                position: absolute;
+                left: 0;
+                top: 35%;
+            }
+        }
+        a {
+            color: rgba(255, 255, 255, .6);
+            font: 400 .95rem 'Montserrat', sans-serif;
+        }
+    }
+}
+
+.top {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 99;
+    @media (max-width: 990px) {
+        right: 15px;
+        bottom: 15px;
+    }
+    &::before {
+        content: '';
+        background: url(../img/icon/anchor.svg) no-repeat center center;
+        background-size: 20px 20px;
+        height: 20px;
+        width: 20px;
+        position: absolute;
+    }
+}
