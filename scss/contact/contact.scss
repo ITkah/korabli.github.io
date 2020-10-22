@@ -1,0 +1,163 @@
+.contact_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    margin-top: 40px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        margin-top: 20px;
+    }
+    .contact_tite {
+        font: 600 1rem 'Montserrat', sans-serif;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        color: #282459;
+        display: flex;
+        align-items: center;
+        @media (max-width: 576px) {
+            margin-bottom: 15px;
+        }
+    }
+    .phone {
+        &::before {
+            content: '';
+            background: url(../img/icon/phone-dark.svg) no-repeat center center;
+            background-size: 15px 15px;
+            height: 15px;
+            width: 15px;
+            display: block;
+            position: relative;
+            left: -5px;
+        }
+    }
+    .time {
+        &::before {
+            content: '';
+            background: url(../img/icon/work-dark.svg) no-repeat center center;
+            background-size: 15px 15px;
+            height: 15px;
+            width: 15px;
+            display: block;
+            position: relative;
+            left: -5px;
+        }
+    }
+    .contact_list {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        li {
+            display: flex;
+            align-items: center;
+            @media (max-width: 576px) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            p {
+                color: #282459;
+                margin-right: 10px;
+                font: 500 1rem 'Montserrat', sans-serif;
+                @media (max-width: 576px) {
+                    margin: 0 0 5px 0;
+                }
+            }
+            a {
+                color: #282459;
+                font: 400 .87rem 'Montserrat', sans-serif;
+                text-decoration: underline;
+            }
+        }
+    }
+    .contact_work {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        li {
+            color: #282459;
+            font: 500 1rem 'Montserrat', sans-serif;
+            display: flex;
+            padding-left: 8px;
+            align-items: center;
+            &::before {
+                content: '';
+                height: 5px;
+                width: 5px;
+                display: block;
+                left: 0;
+                position: relative;
+                left: -8px;
+                background: #282459;
+            }
+        }
+    }
+}
+
+.contact_form {
+    background: #f0f0f0;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 990px) {
+        padding: 20px 15px;
+    }
+    input {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: none;
+        outline: none;
+        background: #282459;
+        color: #fff;
+        border-radius: 0;
+        font: 500 .95rem 'Montserrat', sans-serif;
+    }
+    textarea {
+        height: 100px;
+        margin-bottom: 20px;
+        padding: 10px;
+        border: none;
+        outline: none;
+        background: #282459;
+        border-radius: 0;
+        color: #fff;
+        font: 500 .95rem 'Montserrat', sans-serif;
+    }
+    button {
+        border: 1px solid #282459;
+        padding: 15px 10px;
+        color: #282459;
+        text-transform: uppercase;
+        font: 500 1.125rem 'Montserrat', sans-serif;
+        transition: .3s;
+        &:hover {
+            border: 1px solid #3aa6f5;
+            color: #fff;
+            background: #3aa6f5;
+        }
+    }
+}
+
+input::-webkit-input-placeholder {
+    color: #fff;
+    font: 400 .95rem 'Montserrat', sans-serif;
+}
+
+input:-ms-input-placeholder {
+    color: #fff;
+    font: 400 .95rem 'Montserrat', sans-serif;
+}
+
+input::-ms-input-placeholder {
+    color: #fff;
+    font: 400 .95rem 'Montserrat', sans-serif;
+}
+
+input::placeholder {
+    color: #fff;
+    font: 400 .95rem 'Montserrat', sans-serif;
+}
+
+textarea::placeholder {
+    color: #fff;
+    font: 400 .95rem 'Montserrat', sans-serif;
+}
