@@ -1,0 +1,26 @@
+.devel {
+    ul {
+        margin: 20px 0 0 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        li {
+            position: relative;
+            padding-left: 15px;
+            color: #282459;
+            font: 400 1rem 'Montserrat', sans-serif;
+            @media (max-width: 576px) {
+                font-size: .87rem;
+            }
+            &::before {
+                content: '';
+                background: #282459;
+                height: 5px;
+                width: 5px;
+                position: absolute;
+                left: 0;
+                top: 35%;
+            }
+        }
+    }
+}

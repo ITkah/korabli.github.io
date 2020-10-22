@@ -11,8 +11,16 @@
     }
     .simple_title {
         margin: 0;
+        text-transform: uppercase;
         color: #282459;
         padding-bottom: 10px;
+        font: 500 1.8rem 'Montserrat', sans-serif;
+        @media (max-width: 990px) {
+            font-size: 1.5rem;
+        }
+        @media (max-width: 576px) {
+            font-size: 1.25rem;
+        }
     }
 }
 

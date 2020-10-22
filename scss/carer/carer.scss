@@ -1,0 +1,15 @@
+.carer_wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 100px;
+    @media (max-width: 990px) {
+        grid-gap: 50px;
+    }
+    .about_short_wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        @media (max-width: 990px) {
+            grid-template-columns: 1fr;
+        }
+    }
+}
