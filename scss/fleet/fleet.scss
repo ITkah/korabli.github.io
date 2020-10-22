@@ -1,0 +1,166 @@
+.fleet_container {
+    margin-bottom: 60px;
+    @media (max-width: 576px) {
+        margin-bottom: 30px;
+    }
+}
+
+.fleet_wrap {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 60px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    .fleet_info_box {
+        display: flex;
+        flex-direction: column;
+        .fleet_title_xl {
+            font: 500 1.5rem 'Montserrat', sans-serif;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            color: #282459;
+            @media (max-width: 990px) {
+                font-size: 1.4rem;
+            }
+            @media (max-width: 576px) {
+                font-size: 1.2rem;
+            }
+        }
+        .fleet_text {
+            font: 400 .95rem/22px 'Montserrat', sans-serif;
+            color: #282459;
+            span {
+                font: 500 1rem/22px 'Montserrat', sans-serif;
+                display: block;
+                margin-bottom: 5px;
+                @media (max-width: 576px) {
+                    font: 500 .95rem/21px 'Montserrat', sans-serif;
+                }
+            }
+            @media (max-width: 576px) {
+                font: 400 .87rem/20px 'Montserrat', sans-serif;
+            }
+        }
+    }
+    .fleet_detail_box {
+        padding: 20px 15px;
+        box-shadow: 0 40px 95px -35px #5e5e5e;
+        background-color: #f0f0f0;
+        .fleet_detail_title {
+            font: 500 1.4rem 'Montserrat', sans-serif;
+            margin-bottom: 15px;
+            color: #282459;
+            @media (max-width: 990px) {
+                font-size: 1.25rem;
+            }
+            @media (max-width: 576px) {
+                font-size: 1rem;
+            }
+        }
+        ul {
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font: 400 .95rem 'Montserrat', sans-serif;
+                margin-bottom: 10px;
+                position: relative;
+                color: #282459;
+                padding-left: 13px;
+                &::after {
+                    content: '';
+                    height: 7px;
+                    width: 7px;
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 6px;
+                    background: #282459;
+                }
+                span {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.fleet_slider_wrap {
+    margin-bottom: 40px;
+    @media (max-width: 576px) {
+        margin-bottom: 30px;
+    }
+    .slider-for {
+        margin-bottom: 20px;
+        img {
+            max-width: 100%;
+            height: 475px;
+            width: 100%;
+            object-fit: cover;
+            @media (max-width: 990px) {
+                height: auto;
+            }
+        }
+    }
+    .slider-nav {
+        margin: 0 auto;
+        max-width: 90%;
+        cursor: pointer;
+        @media (max-width: 990px) {
+            max-width: 90%;
+        }
+        .slick-prev:before {
+            content: '';
+            background: url("../img/icon/anchor-arrow.svg") no-repeat center center;
+            background-size: 30px 30px;
+            height: 30px;
+            width: 30px;
+            display: block;
+            transform: rotate(90deg);
+            @media (max-width: 990px) {
+                background-size: 20px 20px;
+                height: 20px;
+                width: 20px;
+            }
+        }
+        .slick-next:before {
+            content: '';
+            background: url("../img/icon/anchor-arrow.svg") no-repeat center center;
+            background-size: 30px 30px;
+            height: 30px;
+            width: 30px;
+            display: block;
+            transform: rotate(-90deg);
+            @media (max-width: 990px) {
+                background-size: 20px 20px;
+                height: 20px;
+                width: 20px;
+            }
+        }
+        .slick-prev {
+            @media (max-width: 576px) {
+                left: -20px;
+            }
+        }
+        .slick-next {
+            @media (max-width: 576px) {
+                right: -20px;
+            }
+        }
+        .slick-slide {
+            padding: 0 10px;
+        }
+        img {
+            max-width: 100%;
+            height: 225px;
+            object-fit: cover;
+            margin: 0 auto;
+            display: block;
+            @media (max-width: 990px) {
+                height: auto;
+            }
+        }
+    }
+}

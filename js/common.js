@@ -25,29 +25,3 @@ $(".arrow_mob").on("click", function(e) {
 $(".active_menu").on("click", function(e) {
     $("nav").toggleClass("nav_active");
 });
-
-$('.single').owlCarousel({
-    loop: true,
-    margin: 5,
-    speed: 600,
-    nav: true,
-    dots: false,
-    items: 1,
-    autoplay: false,
-    autoplayTimeout: 6500,
-    autoplayHoverPause: false,
-    responsive: {
-        0: {
-            nav: false,
-            dots: true,
-        },
-        768: {
-            nav: false,
-            dots: true,
-        },
-        990: {
-            nav: true,
-            dots: false,
-        }
-    }
-})
