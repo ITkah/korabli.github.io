@@ -18,8 +18,20 @@
         @media (max-width: 990px) {
             font-size: 1.5rem;
         }
+        &::after {
+            @media (max-width: 576px) {
+                display: none;
+            }
+        }
+        &::before {
+            @media (max-width: 576px) {
+                display: none;
+            }
+        }
         @media (max-width: 576px) {
             font-size: 1.25rem;
+            margin: 0;
+            padding: 0;
         }
     }
 }

@@ -342,8 +342,16 @@ header {
       .pre_section .simple_title {
         font-size: 1.5rem; } }
     @media (max-width: 576px) {
+      .pre_section .simple_title::after {
+        display: none; } }
+    @media (max-width: 576px) {
+      .pre_section .simple_title::before {
+        display: none; } }
+    @media (max-width: 576px) {
       .pre_section .simple_title {
-        font-size: 1.25rem; } }
+        font-size: 1.25rem;
+        margin: 0;
+        padding: 0; } }
 
 .breadcrumbs_wrap {
   position: relative;
@@ -879,6 +887,58 @@ header {
           grid-column-start: auto;
           grid-column-end: auto;
           grid-row-start: 2; } }
+
+.podrad .simple_xl_wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 50px; }
+  @media (max-width: 990px) {
+    .podrad .simple_xl_wrap {
+      grid-gap: 20px; } }
+  .podrad .simple_xl_wrap .simple_sm_wrap {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 60px; }
+    @media (max-width: 990px) {
+      .podrad .simple_xl_wrap .simple_sm_wrap {
+        grid-template-columns: 1fr;
+        grid-gap: 20px; } }
+    .podrad .simple_xl_wrap .simple_sm_wrap .simple_title {
+      margin-bottom: 10px;
+      padding-bottom: 10px; }
+    .podrad .simple_xl_wrap .simple_sm_wrap .simple_pretitle {
+      margin-bottom: 10px;
+      font: 500 1.25rem 'Montserrat', sans-serif;
+      margin-bottom: 10px;
+      color: #282459;
+      position: relative; }
+      @media (max-width: 990px) {
+        .podrad .simple_xl_wrap .simple_sm_wrap .simple_pretitle {
+          font-size: 1.2rem; } }
+      @media (max-width: 576px) {
+        .podrad .simple_xl_wrap .simple_sm_wrap .simple_pretitle {
+          font-size: 1.1rem; } }
+  .podrad .simple_xl_wrap .simple_sm_wrap:nth-child(2n) {
+    grid-template-columns: 1fr 3fr; }
+    @media (max-width: 990px) {
+      .podrad .simple_xl_wrap .simple_sm_wrap:nth-child(2n) {
+        grid-template-columns: 1fr;
+        grid-gap: 20px; } }
+    .podrad .simple_xl_wrap .simple_sm_wrap:nth-child(2n) .simple_img {
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 1; }
+      @media (max-width: 990px) {
+        .podrad .simple_xl_wrap .simple_sm_wrap:nth-child(2n) .simple_img {
+          grid-column-start: auto;
+          grid-column-end: auto;
+          grid-row-start: 2; } }
+
+.pre_section_text_2 {
+  margin-top: 30px; }
+  @media (max-width: 576px) {
+    .pre_section_text_2 {
+      margin-top: 20px; } }
 
 .fleet_container {
   margin-bottom: 60px; }
@@ -1568,7 +1628,7 @@ p {
       padding: 0; } }
 
 .margin {
-  margin-bottom: 95px; }
+  margin-bottom: 80px; }
   @media (max-width: 990px) {
     .margin {
       margin-bottom: 40px; } }
